@@ -19,28 +19,29 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - as a developer i want the fonts and ui components to be in pixel art style to give a nerdy impression
 - as a developer it is important to me to train the llm to answer questions about myself without hallucinating. It should answer with an automatized text when asked unanswerable, undesired or insensitive questions.
 3. Constraints
-- as a developer i want to use astro with react in the frontend to make benefit of the pace in the page
-- as a developer i want to to use flask in the backend to host and serve the llm with minimal and lightweight setup
-- as a developer i want to use tailwind to quickly build the design
-- as a developer i want to host an llm from Gemini preferably, if this fails for some reason then i will use a model from huggingface
-- as a deployment platform i want to keep following options open: Vercel with serverless functions, Render / Railway / Fly.io for custom flask server.
-
+- frontend: next.js
+- backend: fastapi
+- tailwind
+- ai sdk: Anthropic SDK / LangChain / LlamaIndex
+- vector db: Qdrant / Chroma / pgvector
+- deploy:  Render / Railway / Fly.io / VPS
+- add MCP Server later for Github, CV query etc.
 # MVP
 - Recruiter -> Uses chatbot -> Chatbot gives answers
 
 # Sprints
-1. 24.06 - 01.07
-- collect inspo for design choices
-- Create a design in figma
-- choose an ai model
-- init repo and create project boilerplate
-2. 02.07 - 08.07
-- implement frontend
-3. 08.07 - 15.07
-- implement backend
-4. 15.07 - 22.07 
-- test and deploy 
+1. 10.07 - 16.07
+- create mvp: page with untrained chatbot and quick infos
+- make it deployable
+2. 17.07 - 30.07
+- train llm 
+3. 31.07 - 13.08
+- enhance accessibility, responsiveness and performance (checklist?)
+4. 14.08 - 22.08 
+- unit test, integration test, e2e tests
 
 # Design 
 - Figma 
 
+# Next steps
+- page flipper for quick view

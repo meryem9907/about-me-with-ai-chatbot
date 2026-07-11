@@ -22,7 +22,7 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - frontend: next.js
 - backend: fastapi
 - tailwind
-- ai sdk: Anthropic SDK / LangChain / LlamaIndex
+- ai sdk: Anthropic SDK / LangChain / LlamaIndex / OpenAI
 - vector db: Qdrant / Chroma / pgvector
 - deploy:  Render / Railway / Fly.io / VPS
 - add MCP Server later for Github, CV query etc.

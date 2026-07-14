@@ -1,20 +1,10 @@
 "use client";
 import {
   PixelBox,
-  PixelIconButton,
   PixelDivider,
-  PixelScrollArea,
   PixelSectionHeader,
-  PixelTextarea,
 } from "@pxlkit/ui-kit";
-import { PxlKitIcon } from "@pxlkit/core";
-import {
-  MessageBubbleAssistant,
-  MessageBubbleDefault,
-  MessageBubbleUser,
-} from "./message-bubble";
 import { useState } from "react";
-import { ArrowRight } from "@/app/icons/arrow-right";
 import PromptField from "./prompt-field";
 import MessageBox from "./message-box";
 import { Message } from "@/models/Message";
@@ -32,6 +22,7 @@ export default function ChatContainer({
   const [messages, setMessages] = useState<Message[]>([]);
   const title = chatTitle;
   const description = chatDescription;
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   async function fetchMessages(prompt: string = "Hello!") {
     try {
@@ -41,7 +32,7 @@ export default function ChatContainer({
         { role: "assistant", text: "" },
       ]);
       const response = await fetch(
-        `http://localhost:8000/stream?prompt=${encodeURIComponent(prompt)}`, // use more context later
+        `${apiUrl}/stream?prompt=${encodeURIComponent(prompt)}`, // use more context later
       );
       if (!response.ok || !response.body) throw new Error("Stream failed");
 

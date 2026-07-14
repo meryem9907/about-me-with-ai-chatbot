@@ -8,7 +8,7 @@ agent = Agent()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # your Next.js origin
+    allow_origins=["http://localhost:3000", "https://about-me-with-ai-chatbot.onrender.com"], 
     allow_methods=["*"],
     allow_headers=["*"],
 )

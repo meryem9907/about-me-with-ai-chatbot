@@ -1,4 +1,4 @@
-import { PixelStack } from "@pxlkit/ui-kit";
+import { PixelStack, PixelTypewriter } from "@pxlkit/ui-kit";
 import ReactMarkdown from "react-markdown";
 
 const assistantBubble =
@@ -11,7 +11,6 @@ export function MessageBubbleAssistant({text}: {  text: string}) {
     return (
         <PixelStack gap={4} align="start">
         <div className={assistantBubble}><ReactMarkdown>{text || "…"}</ReactMarkdown></div>
-      
     </PixelStack>
     )
 }
@@ -20,6 +19,16 @@ export function MessageBubbleUser({ text }: { text: string }) {
     return (
         <PixelStack gap={4} align="end" >
       <div className={userBubble}><ReactMarkdown>{text}</ReactMarkdown></div>
+
+    </PixelStack>
+    )
+}
+
+export function MessageBubbleDefault({ text }: { text: string }) {
+    return (
+        <PixelStack gap={4} align="start" >
+      <div className={assistantBubble}><PixelTypewriter label={text} speed={40} delay={800} cursor/>
+</div>
 
     </PixelStack>
     )

@@ -35,6 +35,7 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - make it deployable
 2. 17.07 - 30.07
 - train llm 
+- add page with clickable projects listed
 3. 31.07 - 13.08
 - enhance accessibility, responsiveness and performance (checklist?)
 4. 14.08 - 22.08 
@@ -45,3 +46,4 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 
 # Next steps
 - page flipper for quick view
+

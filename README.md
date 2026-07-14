@@ -14,3 +14,8 @@ You can generate a key from the Google Gemini docs: https://ai.google.dev/gemini
 - make sure to create a gitignore folder with ".env" included to not expose your keys
 - start frontend: <code>npm run dev</code>
 - start backend: <code>fastapi dev</code>
+
+
+# Credits 
+
+- Icons and assets by Pxlkit: https://pxlkit.xyz/

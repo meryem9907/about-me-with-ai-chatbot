@@ -62,7 +62,7 @@ export default function Projects() {
   ));
 
   return (
-    <div className="embla relative mx-auto max-w-4xl ">
+    <div className="embla relative mx-auto  ">
       <div className="embla__viewport overflow-hidden" ref={emblaRef}>
         <div className="embla__container flex touch-pan-y gap-4">
           {projectElements}

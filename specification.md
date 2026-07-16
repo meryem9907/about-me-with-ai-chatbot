@@ -49,3 +49,4 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - dockerize
 - present prepared prompts in the chatbot
 - error handling, to many requests
+- multilingual

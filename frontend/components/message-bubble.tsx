@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 const assistantBubble =
   "max-w-[75%] w-fit break-words  bg-retro-surface text-retro-text border-2 border-retro-cyan p-4 pxl-corner-md";
 const userBubble =
-  "max-w-[75%] w-fit break-words  bg-retro-card text-black border-2 border-retro-gold p-4 pxl-corner-md";
+  "max-w-[75%] w-fit break-words  bg-retro-card text-retro-text border-2 border-retro-gold p-4 pxl-corner-md";
 
 export function MessageBubbleAssistant({text}: {  text: string}) {
 

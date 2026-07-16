@@ -1,13 +1,13 @@
 "use client";
-import {
-  PixelBox,
-  PixelDivider,
-  PixelSectionHeader,
-} from "@pxlkit/ui-kit";
-import { useState } from "react";
+import { PixelBox, PixelDivider, PixelSectionHeader } from "@pxlkit/ui-kit";
+import { useEffect, useState } from "react";
 import PromptField from "./prompt-field";
 import MessageBox from "./message-box";
 import { Message } from "@/models/Message";
+import { loadMesssages,  saveMessages } from "@/utils/persist_messages";
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const MAX_MESSAGES = process.env.MAX_MESSAGES ?? 300;
 
 export default function ChatContainer({
   chatTitle,
@@ -22,23 +22,28 @@ export default function ChatContainer({
   const [messages, setMessages] = useState<Message[]>([]);
   const title = chatTitle;
   const description = chatDescription;
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+
+  useEffect(() => {
+    loadMesssages(setMessages, setPrompt);
+  }, []);
+
+  useEffect(() => {
+    saveMessages(messages, prompt);
+  }, [messages, prompt]);
 
   async function fetchMessages(prompt: string = "Hello!") {
     try {
-      setMessages((prev) => [
-        ...prev,
-        { role: "user", text: prompt },
-        { role: "assistant", text: "" },
-      ]);
+      const newMsg:Message[] = [{ role: "user", text: prompt }, { role: "assistant", text: "" }]
+      setMessages((prev) => [...prev, ...newMsg].slice(-MAX_MESSAGES)); 
       const response = await fetch(
-        `${apiUrl}/stream?prompt=${encodeURIComponent(prompt)}`, // use more context later
+        `${API_URL}/stream?prompt=${encodeURIComponent(prompt)}`, // use more context later
       );
       if (!response.ok || !response.body) throw new Error("Stream failed");
 
       // reads response chunk by chunk
       const reader = response.body.getReader();
-      const decoder = new TextDecoder(); 
+      const decoder = new TextDecoder();
 
       while (true) {
         const { done, value } = await reader.read();
@@ -46,12 +51,12 @@ const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
         const chunk = decoder.decode(value, { stream: true });
         setMessages((prev) => {
-          console.log(prev)
+          console.log(prev);
           const next = [...prev];
           const last = next[next.length - 1];
           // appends chunk to end
           next[next.length - 1] = { ...last, text: last.text + chunk };
-          return next;
+          return next.slice(-MAX_MESSAGES);
         });
       }
     } catch (error) {
@@ -68,15 +73,13 @@ const apiUrl = process.env.NEXT_PUBLIC_API_URL;
           title={title}
         />
         <PixelDivider label="..." tone="green" spacing="sm" />
-        <MessageBox
-          messages={messages}
-          description={description}
-        />
+        <MessageBox messages={messages} description={description} onMessage={fetchMessages} />
         <PromptField
           placeholder={placeholder}
           onMessage={fetchMessages}
           prompt={prompt}
           setPrompt={setPrompt}
+          setMessages={setMessages}
         ></PromptField>
       </PixelBox>
     </div>

@@ -1,151 +1,153 @@
-## Recruiter Q&A (with sample answers)
+# Recruiter Q&A (RAG Friendly)
 
-### General
+## Profile
 
-**Q: Who is Meryem? / Give me a short intro.**  
-A: Meryem Ünüvar is a Computer Science graduate (B.Sc.) from the University of Applied Sciences Augsburg. She is a full-stack developer focused on backend systems, AI-assisted applications, and socially impactful products. She is currently based in Çanakkale, Turkey.
+Q: Who is Meryem Ünüvar?
+A: Meryem Ünüvar is a Computer Science B.Sc. graduate and a backend-focused full-stack developer.
 
-**Q: What kind of role is she looking for?**  
-A: Meryem is looking for software engineering roles, especially junior full-stack or backend-focused positions where she can build reliable APIs, AI-enabled features, and user-centered products.
+Q: Where is she currently based?
+A: She is currently based in Gökçeada (Çanakkale), Turkey.
 
-**Q: Is she open to remote / relocation / full-time / contract?**  
-A: She is open to full-time opportunities and can discuss remote/hybrid and relocation options depending on the role and location.
+Q: What kind of role is she seeking?
+A: She is seeking junior full-stack or backend-focused software engineering roles.
 
-**Q: When can she start?**  
-A: She can discuss availability directly during the interview process. As she is living in an island called Gökceada currently, she might need 2 weeks up front for moving.
+Q: What motivates her work?
+A: She is motivated by practical problem solving, continuous learning, and socially impactful technology.
 
----
+## Work Experience
 
-### Experience & Skills
+Q: What was her role at IAM-Solutions?
+A: She worked as a working student full-stack developer (Angular + Java Spring) from Nov 2025 to Mar 2026.
 
-**Q: What’s her strongest technical stack?**  
-A: Her strongest stack combines Python backend development (FastAPI/Flask), TypeScript frontend development (Angular/Next.js), REST APIs, Docker, and AI-assisted application workflows.
+Q: What was a key achievement at IAM-Solutions?
+A: She helped reduce perceived waiting time from about 7 minutes to about 30 seconds using SSE and chunked responses.
 
-**Q: Describe her last role / main responsibilities.**  
-A: At IAM-Solutions, she worked as a working student full-stack developer (Angular + Java Spring). She improved long-running request handling with SSE/chunked responses, and worked on accessibility, localization, parsing, and error handling.
+Q: What tasks did she perform at IAM-Solutions?
+A: She worked on accessibility, localization, bug fixing, document parsing, and new Angular features.
 
-**Q: Frontend vs backend — where is she strongest?**  
-A: She is strongest in backend and full-stack integration, especially API design, async/background processing, and performance-oriented problem solving.
+Q: What was her role at Faurecia/Forvia?
+A: She worked as a Python backend intern from Oct 2024 to Mar 2026.
 
-**Q: Does she have experience with [React, Python, FastAPI, …]?**  
-A: Yes. She has project and/or internship experience with Python, FastAPI, Flask, TypeScript, Angular, Next.js, REST APIs, Docker, PostgreSQL, and Redis/Celery workflows.
+Q: What was a key achievement at Faurecia/Forvia?
+A: She implemented asynchronous background processing for long-running LLM tasks using Celery and Redis to prevent API blocking.
 
----
+## Skills
 
-### Projects
+Q: What are her strongest technical areas?
+A: Python backend development, REST APIs, backend/full-stack integration, and practical performance optimization.
 
-**Q: Tell me about a project she’s proud of.**  
-A: One flagship project is Home4Strays, where she contributed as Product Owner and backend developer. She helped lead an 8-member team and implemented matching logic to connect stray animals with suitable caretakers.
+Q: Which backend frameworks has she used?
+A: Flask, FastAPI, Django, Express, and Java Spring Framework.
 
-**Q: What did she build in [project name]?**  
-A:  
-- **Home4Strays:** backend matching logic, product planning/tracking, collaboration across team.  
-- **ChaCha Lens:** REST communication layer between Unity/HoloLens app and local AI server, supporting VLM + TTS chart explanations.  
-- **About-me-with-ai-chatbot:** recruiter-focused portfolio chatbot with Next.js + FastAPI + Gemini.
+Q: Which frontend frameworks has she used?
+A: Angular and Next.js.
 
-**Q: Solo or team? What was her contribution?**  
-A: She has done both solo and team projects. In teams, she contributes backend architecture and implementation while coordinating effectively with frontend and product needs.
+Q: Which databases has she used?
+A: PostgreSQL and Redis.
 
----
+Q: Which tools does she use in practice?
+A: Docker, Git, Insomnia, Mockoon, Gunicorn, and Curl.
 
-### Fit & Soft Skills
+Q: What AI-related experience does she have?
+A: She has built AI-assisted applications using Hugging Face, open-source VLMs, and text-to-speech pipelines.
 
-**Q: How does she work in a team?**  
-A: She communicates clearly, plans work structurally, and focuses on practical delivery. She is comfortable collaborating across backend, frontend, and product priorities.
+## References (RAG Friendly)
+Q: Does Meryem have formal employer references?
+A: Yes. She has formal references from IAM Solutions (work student role) and Faurecia/Forvia (internship role).
+Q: What period did the IAM reference cover?
+A: The IAM reference covers 01.11.2025 to 14.03.2026.
+Q: What role did IAM certify?
+A: IAM certified her as a working student in software development.
+Q: Which tasks are explicitly confirmed in the IAM reference?
+A: Accessibility improvements, Angular bug fixing, Angular feature development, SSE implementation in Angular and Java backend, and evaluation/testing of translation-management applications.
+Q: How is her performance described by IAM?
+A: IAM describes her as proactive, responsible, quick to learn, reliable, technically strong, and delivering to full satisfaction.
+Q: How is her teamwork/behavior described by IAM?
+A: IAM states her behavior toward supervisors and colleagues was consistently exemplary and that she contributed to a positive team atmosphere.
+Q: How did IAM conclude the reference?
+A: IAM thanked her for consistently very good performance and wished her continued professional and personal success.
+Q: What period did the Forvia/Faurecia internship reference cover?
+A: The internship reference covers 01.10.2024 to 14.03.2025.
+Q: Which department is named in the Forvia/Faurecia reference?
+A: It states she worked in the Artificial Intelligence department.
+Q: Which tasks are explicitly confirmed in the Forvia/Faurecia reference?
+A: Parallelization and performance measurement of Azure OpenAI requests, API development with Python/Flask/Celery/SQLAlchemy/Redis, Angular frontend tasks, message queue integration for I/O offloading, CI/CD and Azure DevOps guideline compliance, and Docker containerization.
+Q: How is her performance described by Forvia/Faurecia?
+A: The reference describes her as highly committed, quick to understand new concepts, initiative-driven, and strong in validation and performance improvement.
+Q: How is her pressure handling described by Forvia/Faurecia?
+A: The reference states she remained highly resilient even under heavy workload.
+Q: How is her professional conduct described by Forvia/Faurecia?
+A: The reference describes her as friendly, balanced, cooperative, and exemplary in behavior toward supervisors and colleagues.
+Q: How did Forvia/Faurecia conclude the reference?
+A: The company thanked her for very good and pleasant collaboration, stated she is well suited for her chosen profession, and wished her continued success.
+Q: Are Meryem’s claims about proactivity and learning agility supported by references?
+A: Yes. Both references explicitly confirm high initiative, strong learning ability, and reliable execution.
 
-**Q: Strengths and areas she’s improving?**  
-A: Strengths include analytical problem solving, backend/full-stack implementation, and structured execution. She continuously improves depth in algorithms, systems design, and performance optimization.
+## Education
 
-**Q: Why software development / this field?**  
-A: She enjoys turning complex problems into useful products and is especially motivated by software with social impact and real user value.
+Q: What did she study?
+A: She studied Computer Science (B.Sc.) at the University of Applied Sciences Augsburg.
 
-**Q: Languages she speaks?**  
+Q: What is her final grade?
+A: Her final grade is 1.9 (German grading system).
+
+Q: What was her bachelor thesis topic?
+A: Evaluating chart understanding of visual language models in XR environments.
+
+## Projects
+
+Q: What are her flagship projects?
+A: Home4Strays, ChaCha HoloLens App, About Me with AI Chatbot, and Portfolio Angular.
+
+Q: What is Home4Strays?
+A: Home4Strays is a web app that helps NGOs match stray animals with suitable caretakers.
+
+Q: What was her role in Home4Strays?
+A: She was Product Owner and backend developer, and led an 8-member team.
+
+Q: What is ChaCha HoloLens App?
+A: It is an XR accessibility project that uses FastAPI, VLMs, and TTS to help visually impaired users understand charts.
+
+Q: What did she build in ChaCha Lens technically?
+A: She built the REST communication layer between Unity/HoloLens and the local AI backend.
+
+Q: What is About Me with AI Chatbot?
+A: It is her recruiter-focused portfolio site with an AI chatbot built using Next.js and FastAPI.
+
+## Soft Skills
+
+Q: How does she work in a team?
+A: She communicates clearly, plans tasks structurally, and collaborates reliably across backend, frontend, and product priorities.
+
+Q: What is one weakness she is improving?
+A: She is improving how she handles high-pressure moments by using structured planning, smaller milestones, and early risk communication.
+
+Q: How does she learn new technologies?
+A: She studies fundamentals, prototypes quickly, integrates into real features, measures outcomes, and iterates based on debugging and performance results.
+
+## Languages
+
+Q: Which spoken languages does she have?
 A: German (native), Turkish (native), English (C2).
 
-## Reference-based Recruiter Q&A
+## Recruiter Practical Questions
 
-**Q: What do Meryem’s references say about her work ethic?**  
-A: Both references describe her as highly proactive, reliable, and very committed. She is highlighted as someone who takes ownership, identifies improvements independently, and consistently delivers high-quality outcomes.
+Q: Is she open to remote or relocation?
+A: She is open to discussing remote, hybrid, and relocation options depending on the role.
 
-**Q: How is her performance evaluated in official references?**  
-A: Her references evaluate her performance very positively, noting strong technical implementation quality, dependable execution, and consistently very good results.
+Q: What about salary expectations?
+A: Salary expectations are discussed based on role scope, location, and total compensation.
 
-**Q: How does she handle pressure and high workload situations?**  
-A: Her references explicitly state that she remained highly resilient even under high workload and maintained strong performance in demanding situations.
+Q: When can she start?
+A: Availability is discussed directly during the interview process.
 
-**Q: What do references say about her teamwork and communication?**  
-A: She is described as cooperative, open to feedback, and exemplary in behavior toward supervisors and colleagues. Her collaboration style is considered constructive and pleasant.
+## Links
 
-**Q: Is she open to feedback and able to improve quickly?**  
-A: Yes. Her IAM reference specifically notes that she was open to feedback, implemented it effectively, and showed strong learning agility when entering new topics.
+Q: Where can recruiters view her work?
+A: GitHub: https://github.com/meryem9907
 
-**Q: What technical strengths are confirmed by references?**  
-A: The references confirm practical strengths in backend/frontend integration, API development, asynchronous processing, queue-based architecture, performance optimization, and containerization.
+Q: Where is her portfolio?
+A: https://about-me-with-ai-chatbot.onrender.com/
 
-**Q: What was her impact at IAM Solutions?**  
-A: She worked on accessibility, Angular bug fixing, feature development, and SSE integration in Angular and Java backend. Her contributions are credited with strong technical quality and meaningful optimization.
-
-**Q: What was her impact during the Forvia internship?**  
-A: She contributed to AI-related backend engineering by parallelizing Azure OpenAI request handling, building a Python/Flask/Celery/Redis API workflow, integrating queue-based task handling, and supporting Angular frontend work.
-
-**Q: Do references indicate she can work independently?**  
-A: Yes. The references mention that she recognized optimization potential independently, proposed improvements proactively, and solved problems with strong initiative.
-
-**Q: How trustworthy are her claims about learning speed and adaptability?**  
-A: They are strongly supported by references, which state that she quickly understood new concepts and applied them effectively in practical development tasks.
-
-**Q: Is she suitable for backend or full-stack junior roles?**  
-A: Yes. Her references support fit for backend-focused full-stack roles by validating both technical implementation skills and strong collaboration behavior.
-
-**Q: How do references describe her professional behavior?**  
-A: She is described as responsible, careful, friendly, balanced, and consistently exemplary in professional conduct.
-
----
-
-### Process
-
-**Q: Walk me through her career path.**  
-A: She studied Computer Science in Augsburg, completed practical roles in backend/full-stack engineering (Faurecia and IAM-Solutions), and built multiple portfolio/impact projects while developing a strong backend + full-stack profile.
-
-**Q: Biggest challenge she solved?**  
-A: Reducing perceived wait time for long-running requests (from ~7 minutes to ~30 seconds) by implementing SSE/chunked response handling in backend and frontend.
-
-**Q: How does she learn new tech?**  
-A: She follows a practical, iterative approach: first understanding fundamentals through official documentation and reliable references, then validating ideas with small prototypes, and finally integrating them into real project features. She measures impact (performance, reliability, UX), debugs bottlenecks, and refines the solution. She also uses AI tools such as Cursor to speed up research, summarize sources, and compare implementation options while keeping decisions evidence-based.
-
-**Q: GitHub / portfolio / references?**  
-A:  
-- GitHub: https://github.com/meryem9907  
-- Portfolio: https://about-me-with-ai-chatbot.onrender.com/  
-- LinkedIn: https://www.linkedin.com/in/meryem-unuvar
-
----
-
-### Practical (sensitive/early-stage)
-
-**Q: Salary expectations?**  
-A: Salary expectations are best discussed based on role scope, location, and total compensation package during the interview process. Curently she is focused on gaining work experience so salary is less priority.
-
-**Q: Work authorization / location?**  
-A: She is currently based in Turkey and can discuss work authorization and location specifics during hiring conversations.
-
----
-
-### Demo questions (for the site)
-
-**Q: What are Meryem’s specializations?**  
-A: Backend-focused full-stack development, REST APIs, AI-assisted apps, and practical performance optimization.
-
-**Q: What projects has she built?**  
-A: Examples include Home4Strays, ChaCha Lens, About-me-with-ai-chatbot, Book Whisperer, and additional web/IoT prototypes.
-
-**Q: Is she a good fit for a junior full-stack role?**  
-A: Yes. She has relevant internship and working-student experience, production-like project delivery, and strong backend/full-stack fundamentals.
-
-**Q: What’s her experience with React and Python?**  
-A: She has hands-on experience with Python backend systems and has worked in TypeScript-based frontend ecosystems, including React-related projects and Next.js applications.
-
-**Q: What is one weakness Meryem is working on?**
-A: One area she has actively improved is staying calm under high pressure. She now uses structured planning, smaller milestones, and early communication of risks, which helps her stay focused and deliver reliably. She is also working on speaking up earlier instead of hesitating to share her ideas. To support this, she uses practical routines such as the “1-2-3, just do it” technique and prepares in advance by closing knowledge gaps and anticipating likely questions. But she also learned to be open to spontaneous occurings and to embrace challenges by seeing them as a opportunity to grow.
-
-
+Q: Where is her LinkedIn?
+A: https://www.linkedin.com/in/meryem-unuvar

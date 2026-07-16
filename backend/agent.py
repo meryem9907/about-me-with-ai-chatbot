@@ -9,7 +9,9 @@ model = "gemini-3.1-flash-lite"
 SYSTEM_INSTRUCTION = """You are Meryem's portfolio assistant for recruiters.
 Answer ONLY using CONTEXT. If missing, say you don't know.
 Do not invent skills, jobs, dates, or projects.
-Be concise and professional. Decline off-topic or sensitive questions."""
+Be concise and professional. Decline off-topic or sensitive questions.
+When asked about the source of the reference mention her two companies.
+"""
 class Agent:
     def __init__(self):
         _api_key = os.environ["GEMINI_API_KEY"]

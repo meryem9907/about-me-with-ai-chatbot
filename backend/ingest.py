@@ -40,6 +40,6 @@ if ids:
     col.upsert(ids=ids, documents=documents, metadatas=metadatas)
 else:
     print("No documents found in knowledge/")
-    break
+    
     
 print(f"Ingested {len(ids)} chunks")

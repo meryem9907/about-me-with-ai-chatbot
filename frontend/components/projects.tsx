@@ -1,7 +1,7 @@
 "use client";
 
 import { PxlKitIcon } from "@pxlkit/core";
-import { PixelButton, PixelCard } from "@pxlkit/ui-kit";
+import { PixelButton, PixelCard, PixelTooltip } from "@pxlkit/ui-kit";
 import { Heart } from "@pxlkit/social";
 import { Staff } from "@pxlkit/gamification";
 import { SparkleSmall } from "@pxlkit/ui";
@@ -31,13 +31,17 @@ function Cell({
         icon={icon}
         title={children}
         footer={
+<PixelTooltip content="Currently not available" position="bottom">
           <PixelButton
+          disabled
             tone="red"
             iconLeft={<PxlKitIcon icon={Lightning} size={32} />}
             className="whitespace-nowrap w-full min-w-0"
           >
             Visit Live-Demo
           </PixelButton>
+          </PixelTooltip>
+
         }
       >
         {desc}

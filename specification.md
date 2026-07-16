@@ -47,5 +47,5 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 # Next steps
 - fill projects, skills and targets, the way i work?
 - dockerize
-- 
-
+- present prepared prompts in the chatbot
+- error handling, to many requests

@@ -53,6 +53,7 @@ export default function TabBar() {
   return (
    <div className="p-3">
       <PixelTabs
+      keepMounted={true}
         items={items}
          activationMode="manual"
         onChange={(id) => {

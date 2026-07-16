@@ -10,27 +10,39 @@ Meryem builds full-stack, AI-assisted, IoT, and animal-welfare apps. Highlights 
 
 ## Featured / product projects
 
-### Home4Strays ⭐ Flagship Project
-Web app that helps NGOs match stray animals with suitable caretakers so animals can find a forever home.
-- Stack: React, Express, TypeScript, Tailwind, DaisyUI
+### Home4Strays (Flagship)
+Web app helping NGOs match stray animals with suitable caretakers.
+- Role: Product Owner + Backend Developer
+- Contributions: backlog and progress management, backend matching logic
+- Stack: React, Express, TypeScript, PostgreSQL, Tailwind, Docker
 - Live: https://home4strays.org/en
 - Repo: https://github.com/meryem9907/home4strays
-- Themes: NGO tooling, adoption matching, stray animals
-- Future plans: Make it deployable, complete matching feature
+
+### ChaCha HoloLens App (Flagship)
+XR accessibility app for chart understanding using VLM + TTS.
+- Role: Thesis project developer
+- Contributions: REST communication layer between Unity/HoloLens app and local AI backend
+- Stack: Unity, HoloLens 2, FastAPI, REST API, Hugging Face, VLMs, TTS
+- Repo: https://github.com/meryem9907/chacha-hololens-app
+
+### About Me with AI Chatbot (Flagship)
+Recruiter-focused personal website with AI chatbot.
+- Stack: Next.js, TypeScript, FastAPI, Gemini, pixel-art UI
+- Live: https://about-me-with-ai-chatbot.onrender.com/
+- Repo: https://github.com/meryem9907/about-me-with-ai-chatbot
+
+### Portfolio Angular (Flagship)
+Earlier portfolio website implementation in Angular.
+- Stack: Angular, CSS
+- Live: https://meryem9907.github.io/portfolio-angular/
+- Repo: https://github.com/meryem9907/portfolio-angular
 
 ### PatiPati
 Mobile app for locating stray animals in Turkey and sharing info about shelter, food, water, and healthcare needs.
 - Stack: TypeScript
 - Repo: https://github.com/meryem9907/patipati
 - Themes: geolocation, animal welfare, Turkey
-- Future plans: Make it deployable
-
-### About Me with AI Chatbot ⭐ Flagship Project
-Portfolio / about-me site with an AI chatbot that answers recruiter questions about Meryem.
-- Stack: Next.js, TypeScript, FastAPI, Gemini LLM, pixel-art UI (pxlkit)
-- Live: https://about-me-with-ai-chatbot.onrender.com/
-- Repo: https://github.com/meryem9907/about-me-with-ai-chatbot
-- Themes: RAG-ready chatbot, personal branding for hiring
+- Future plans: Make it deployabl
 
 ### Book Whisperer
 Library visitor interface with an AI chatbot that recommends books and helps find book locations in the library.
@@ -44,15 +56,6 @@ E-commerce platform for bee-friendly products (plants, beekeeping tools, honey/w
 
 ## AI / XR
 
-### ChaCha HoloLens App ⭐ Flagship Project
-Unity HoloLens app that connects to an HTTP server and generates spoken (TTS) answers from a vision-language model (VLM).
-- Stack: Unity, C++
-- Repo: https://github.com/meryem9907/chacha-hololens-app
-
-### ChaCha Server
-REST backend for the ChaCha HoloLens app.
-- Stack: Python
-- Repo: https://github.com/meryem9907/chacha-server
 
 ## Embedded / IoT
 
@@ -68,11 +71,6 @@ ESP32 web server that serves room temperature readings.
 
 ## Web / backend practice
 
-### Portfolio Angular ⭐ Flagship Project
-Earlier about-me / portfolio page built with Angular.
-- Stack: Angular, CSS
-- Live: https://meryem9907.github.io/portfolio-angular/
-- Repo: https://github.com/meryem9907/portfolio-angular
 
 ### Blog Backend Django
 Django backend for a blog.

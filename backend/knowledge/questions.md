@@ -12,7 +12,7 @@ A: Meryem is looking for software engineering roles, especially junior full-stac
 A: She is open to full-time opportunities and can discuss remote/hybrid and relocation options depending on the role and location.
 
 **Q: When can she start?**  
-A: She can discuss availability directly during the interview process. As she is living in an island called Gökceada currently, she might need a week in front for moving.
+A: She can discuss availability directly during the interview process. As she is living in an island called Gökceada currently, she might need 2 weeks up front for moving.
 
 ---
 
@@ -20,9 +20,6 @@ A: She can discuss availability directly during the interview process. As she is
 
 **Q: What’s her strongest technical stack?**  
 A: Her strongest stack combines Python backend development (FastAPI/Flask), TypeScript frontend development (Angular/Next.js), REST APIs, Docker, and AI-assisted application workflows.
-
-**Q: How many years of experience in X?**  
-A: She has practical hands-on experience through internships, working-student roles, and multiple end-to-end projects; exact duration depends on the specific technology. But combining her internship and working-student-employment she has 8 month of work experience.
 
 **Q: Describe her last role / main responsibilities.**  
 A: At IAM-Solutions, she worked as a working student full-stack developer (Angular + Java Spring). She improved long-running request handling with SSE/chunked responses, and worked on accessibility, localization, parsing, and error handling.
@@ -64,6 +61,44 @@ A: She enjoys turning complex problems into useful products and is especially mo
 
 **Q: Languages she speaks?**  
 A: German (native), Turkish (native), English (C2).
+
+## Reference-based Recruiter Q&A
+
+**Q: What do Meryem’s references say about her work ethic?**  
+A: Both references describe her as highly proactive, reliable, and very committed. She is highlighted as someone who takes ownership, identifies improvements independently, and consistently delivers high-quality outcomes.
+
+**Q: How is her performance evaluated in official references?**  
+A: Her references evaluate her performance very positively, noting strong technical implementation quality, dependable execution, and consistently very good results.
+
+**Q: How does she handle pressure and high workload situations?**  
+A: Her references explicitly state that she remained highly resilient even under high workload and maintained strong performance in demanding situations.
+
+**Q: What do references say about her teamwork and communication?**  
+A: She is described as cooperative, open to feedback, and exemplary in behavior toward supervisors and colleagues. Her collaboration style is considered constructive and pleasant.
+
+**Q: Is she open to feedback and able to improve quickly?**  
+A: Yes. Her IAM reference specifically notes that she was open to feedback, implemented it effectively, and showed strong learning agility when entering new topics.
+
+**Q: What technical strengths are confirmed by references?**  
+A: The references confirm practical strengths in backend/frontend integration, API development, asynchronous processing, queue-based architecture, performance optimization, and containerization.
+
+**Q: What was her impact at IAM Solutions?**  
+A: She worked on accessibility, Angular bug fixing, feature development, and SSE integration in Angular and Java backend. Her contributions are credited with strong technical quality and meaningful optimization.
+
+**Q: What was her impact during the Forvia internship?**  
+A: She contributed to AI-related backend engineering by parallelizing Azure OpenAI request handling, building a Python/Flask/Celery/Redis API workflow, integrating queue-based task handling, and supporting Angular frontend work.
+
+**Q: Do references indicate she can work independently?**  
+A: Yes. The references mention that she recognized optimization potential independently, proposed improvements proactively, and solved problems with strong initiative.
+
+**Q: How trustworthy are her claims about learning speed and adaptability?**  
+A: They are strongly supported by references, which state that she quickly understood new concepts and applied them effectively in practical development tasks.
+
+**Q: Is she suitable for backend or full-stack junior roles?**  
+A: Yes. Her references support fit for backend-focused full-stack roles by validating both technical implementation skills and strong collaboration behavior.
+
+**Q: How do references describe her professional behavior?**  
+A: She is described as responsible, careful, friendly, balanced, and consistently exemplary in professional conduct.
 
 ---
 
@@ -112,3 +147,5 @@ A: She has hands-on experience with Python backend systems and has worked in Typ
 
 **Q: What is one weakness Meryem is working on?**
 A: One area she has actively improved is staying calm under high pressure. She now uses structured planning, smaller milestones, and early communication of risks, which helps her stay focused and deliver reliably. She is also working on speaking up earlier instead of hesitating to share her ideas. To support this, she uses practical routines such as the “1-2-3, just do it” technique and prepares in advance by closing knowledge gaps and anticipating likely questions. But she also learned to be open to spontaneous occurings and to embrace challenges by seeing them as a opportunity to grow.
+
+

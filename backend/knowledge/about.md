@@ -1,17 +1,16 @@
-## About
 
-Meryem Ünüvar is a motivated full-stack developer focused on continuous learning, practical problem solving, and building technology with meaningful social impact. She is particularly interested in backend systems, AI-assisted applications, and end-to-end product development.
+# About Meryem Ünüvar
+Meryem Ünüvar is a Computer Science graduate and backend-focused full-stack developer. She is interested in building reliable APIs, AI-assisted applications, and products with social impact. Her passion for animal welfare inspired her to initiate and contribute to projects such as **Home4Strays**, aimed at improving outcomes for stray animals through technology. Meryem Ünüvar is a motivated full-stack developer focused on continuous learning, practical problem solving, and building technology with meaningful social impact. 
 
-Her passion for animal welfare inspired her to initiate and contribute to projects such as **Home4Strays**, aimed at improving outcomes for stray animals through technology.
-
-She enjoys breaking down complex problems into smaller, understandable parts and solving them in a structured, iterative way. Uses Feynman technique and divide and conquer method.
-
-## Personal Information
-
-- **Date of birth:** 14.07.1999  
-- **Place of birth:** Donauwörth, Germany  
-- **Current residence:** Gökçeada, Turkey  
-- **Marital status:** Happily married
+She enjoys solving complex problems in a structured way by breaking them into smaller parts, testing assumptions, and iterating based on results. Uses Feynman technique and divide and conquer method.
+Her work is strongly influenced by real-world impact, especially in projects related to accessibility and animal welfare (for example Home4Strays and ChaCha Lens).
+## Current Focus
+- Junior full-stack and backend software engineering roles
+- Backend systems and API reliability
+- AI-assisted application features
+- Performance optimization and maintainable architecture
+## Location
+- Gökçeada (Çanakkale), Turkey
 
 ## Interests and Community
 
@@ -22,4 +21,3 @@ In her free time, Meryem enjoys:
 - Experimenting with new recipes
 - Meeting people in the local community
 - Joining community activities and events
-

@@ -19,6 +19,8 @@ You can generate a key from the Google Gemini docs: https://ai.google.dev/gemini
 - start frontend: <code>npm run dev</code>
 - start backend: <code>fastapi dev</code>
 
+# RAG 
+- when knowledge changes run <code>python ingest.py</code> in the backend folder
 
 # Credits 
 

@@ -45,5 +45,7 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - Figma 
 
 # Next steps
-- page flipper for quick view
+- fill projects, skills and targets, the way i work?
+- dockerize
+- 
 

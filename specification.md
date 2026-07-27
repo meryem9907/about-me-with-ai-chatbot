@@ -45,8 +45,10 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - Figma 
 
 # Next steps
-- fill projects, skills and targets, the way i work?
 - dockerize
-- present prepared prompts in the chatbot
 - error handling, to many requests
 - multilingual
+- improve mobile version
+- enhance accessibility
+- make it scalable for the future
+- add tests in frontend and backend

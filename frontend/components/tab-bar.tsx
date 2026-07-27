@@ -4,9 +4,7 @@ import { AnimatedPxlKitIcon, PxlKitIcon } from "@pxlkit/core";
 import { PixelTabs, TabItem } from "@pxlkit/ui-kit";
 import { TypingDots } from "@pxlkit/feedback";
 import { BlinkingEye } from "@pxlkit/social";
-import { TargetHit } from "@pxlkit/feedback";
-import { MagicWand } from "@pxlkit/gamification";
-import QuickViewContainer from "./projects";
+import ProjectCards from "./projects-cards";
 import ChatContainer from "./chat-container";
 import {  useRouter } from "next/navigation";
 
@@ -33,7 +31,7 @@ export default function TabBar() {
     {
       id: "projects",
       label: "Projects",
-      content: <QuickViewContainer />,
+      content: <ProjectCards />,
       icon: <AnimatedPxlKitIcon icon={BlinkingEye} size={32} />,
     }/* ,
     {
@@ -51,8 +49,9 @@ export default function TabBar() {
   ];
 
   return (
-   <div className="p-3">
+   <div className="p-3 ">
       <PixelTabs
+
       keepMounted={true}
         items={items}
          activationMode="manual"

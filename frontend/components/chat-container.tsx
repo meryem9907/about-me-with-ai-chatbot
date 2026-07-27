@@ -1,10 +1,11 @@
 "use client";
-import { PixelBox, PixelDivider, PixelSectionHeader } from "@pxlkit/ui-kit";
-import { useEffect, useState } from "react";
+import { PixelBox, PixelDivider, PixelSectionHeader, useToast } from "@pxlkit/ui-kit";
+import { useEffect, useRef, useState } from "react";
 import PromptField from "./prompt-field";
 import MessageBox from "./message-box";
 import { Message } from "@/models/Message";
 import { loadMesssages,  saveMessages } from "@/utils/persist_messages";
+
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 const MAX_MESSAGES = process.env.MAX_MESSAGES ?? 300;
@@ -20,10 +21,11 @@ export default function ChatContainer({
 }) {
   const [prompt, setPrompt] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
+  const [firstMessage, setFirstMessage] = useState(true);
   const title = chatTitle;
   const description = chatDescription;
-
-
+  const { toast } = useToast();
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     loadMesssages(setMessages, setPrompt);
   }, []);
@@ -34,6 +36,16 @@ export default function ChatContainer({
 
   async function fetchMessages(prompt: string = "Hello!") {
     try {
+      if (firstMessage) {
+        setFirstMessage(false);
+        toast({
+          title: "",
+          message: "The server is starting up, please wait a moment...",
+          tone: "cyan",
+          duration: 20000,
+          
+        });
+      }
       const newMsg:Message[] = [{ role: "user", text: prompt }, { role: "assistant", text: "" }]
       setMessages((prev) => [...prev, ...newMsg].slice(-MAX_MESSAGES)); 
       const response = await fetch(
@@ -64,16 +76,16 @@ export default function ChatContainer({
     }
   }
   return (
-    <div className="flex flex-col flex-1 items-center justify-center pb-50 w-full px-0  sm:px-10">
+    <div className="flex flex-col flex-1 items-center justify-center pb-5 w-full px-0 sm:px-5" >
       <PixelBox className="p-10 w-full w-[100rem]" tone="cyan">
         <PixelSectionHeader
           align="center"
-          className="p-5 flex flex-col items-center justify-center"
+          className="md:p-5 sm:flex-col sm:items-center sm:justify-center hidden sm:flex"
           eyebrow=""
           title={title}
         />
         <PixelDivider label="..." tone="green" spacing="sm" />
-        <MessageBox messages={messages} description={description} onMessage={fetchMessages} />
+        <MessageBox messages={messages} description={description} onMessage={fetchMessages} scrollRef={scrollRef} />
         <PromptField
           placeholder={placeholder}
           onMessage={fetchMessages}
@@ -82,6 +94,7 @@ export default function ChatContainer({
           setMessages={setMessages}
         ></PromptField>
       </PixelBox>
+      <div ref={scrollRef} />
     </div>
   );
 }

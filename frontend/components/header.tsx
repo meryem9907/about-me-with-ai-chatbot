@@ -5,12 +5,12 @@ import {  CoolEmoji } from "@pxlkit/parallax";
 
 export default function Header() {
   return (
-    <div className="bg-retro-bg">
+    <div className="bg-[var(--retro-bg)]">
       <PixelHeroSection
         density="comfortable"
 minHeight="sm"
         eyebrow="Introducing"
-        headline="My Portfolio!"
+        headline="My Portfolio"
         subline="Hi, I'm Meryem! I'm so excited you are here!"
         className="object-scale-down md:object-cover max-h-[200px]"
       />

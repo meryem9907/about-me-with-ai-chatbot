@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from './providers'
+import { Providers } from "./providers";
 import { Inter, Press_Start_2P } from "next/font/google";
 import Footer from "@/components/footer";
 import LightDarkBtn from "@/components/light-dark-btn";
@@ -25,7 +25,6 @@ const themeScript = `
     })();
   `;
 
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -47,15 +46,18 @@ export default function RootLayout({
       className={`${inter.variable} ${pressStart.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <head><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script dangerouslySetInnerHTML={{ __html: themeScript }} ></script></head> 
-      <body className="flex flex-col min-h-dvh overflow-x-hidden "> 
-        <Header/>
-        <div className="flex-1 min-w-0 min-h-0">
-        <Providers>{children}</Providers> 
-     
-</div>    <LightDarkBtn /><Footer />
-       <ScrollUpBtn />
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script dangerouslySetInnerHTML={{ __html: themeScript }}></script>
+      </head>
+      <body className="flex flex-col min-h-dvh overflow-x-hidden ">
+        <Header />
+        <div className=" min-w-0 min-h-0">
+          <Providers>{children}</Providers>
+        </div>
+        <LightDarkBtn />
+        <Footer />
+        <ScrollUpBtn />
       </body>
     </html>
   );

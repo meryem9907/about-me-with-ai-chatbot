@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="footer bg-[var(--retro-surface)] p-5 w-full 
     flex flex-col md:justify-center 
     items-center ">
-      <div className="text-center pb-2">Links </div>
+      <div className="text-center pb-5">Links </div>
       <div className="flex flex-row flex-wrap gap-2 justify-center items-center">
         <PixelButton
           className="m-2 cursor-pointer "

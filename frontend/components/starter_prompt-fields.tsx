@@ -3,7 +3,7 @@ import { starterPrompts } from "./data/starter_prompts";
 
 export default function StarterPrompts({onMessage}:{onMessage: (text: string) => Promise<void>;}  ){
 
-    const starterPromptsView = starterPrompts.map((prompt,i)=> 
+    const starterPromptsView = starterPrompts.map((prompt)=> 
         (<PixelChip className="md:w-auto w-full mb-2 md:mb-0" key={prompt.id} label={prompt.content} tone="purple" onClick={()=>onMessage(prompt.content)}/>)
 
     )

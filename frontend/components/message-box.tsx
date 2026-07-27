@@ -1,15 +1,15 @@
-import { PixelBox, PixelDivider, PixelScrollArea, PixelSectionHeader } from "@pxlkit/ui-kit";
+import { PixelBox,  PixelScrollArea} from "@pxlkit/ui-kit";
 import { MessageBubbleAssistant, MessageBubbleDefault, MessageBubbleUser } from "./message-bubble";
 import { Message } from "@/models/Message";
-import { Dispatch, SetStateAction, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import StarterPrompts from "./starter_prompt-fields";
 
-export default function MessageBox({ messages,  description, onMessage, scrollRef}:{messages:Message[],  description:string,   onMessage: (text: string) => Promise<void>, scrollRef: React.RefObject<HTMLDivElement | null>} ){
-  const bottomRef = useRef<HTMLDivElement>(null);
+export default function MessageBox({ messages,  description, onMessage, mainWindowBottomRef}:{messages:Message[],  description:string,   onMessage: (text: string) => Promise<void>, mainWindowBottomRef: React.RefObject<HTMLDivElement | null>} ){
+  const chatWindowBottomRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
-    scrollRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
-  }, [messages]);  
+    chatWindowBottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+    mainWindowBottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [mainWindowBottomRef, messages]);  
   return (
     <>
        
@@ -26,7 +26,8 @@ export default function MessageBox({ messages,  description, onMessage, scrollRe
                   <MessageBubbleAssistant key={i} text={message.text} />
                 ),
               )}   
-            </div>  <div ref={bottomRef} />
+            </div>  
+            <div ref={chatWindowBottomRef} />
           </PixelScrollArea>
      
         </PixelBox>

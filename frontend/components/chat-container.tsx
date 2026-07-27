@@ -26,6 +26,7 @@ export default function ChatContainer({
   const description = chatDescription;
   const { toast } = useToast();
   const scrollRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     loadMesssages(setMessages, setPrompt);
   }, []);
@@ -85,7 +86,7 @@ export default function ChatContainer({
           title={title}
         />
         <PixelDivider label="..." tone="green" spacing="sm" />
-        <MessageBox messages={messages} description={description} onMessage={fetchMessages} scrollRef={scrollRef} />
+        <MessageBox messages={messages} description={description} onMessage={fetchMessages} mainWindowBottomRef={scrollRef} />
         <PromptField
           placeholder={placeholder}
           onMessage={fetchMessages}

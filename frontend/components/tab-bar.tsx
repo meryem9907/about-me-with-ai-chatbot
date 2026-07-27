@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedPxlKitIcon, PxlKitIcon } from "@pxlkit/core";
+import { AnimatedPxlKitIcon} from "@pxlkit/core";
 import { PixelTabs, TabItem } from "@pxlkit/ui-kit";
 import { TypingDots } from "@pxlkit/feedback";
 import { BlinkingEye } from "@pxlkit/social";
@@ -33,19 +33,8 @@ export default function TabBar() {
       label: "Projects",
       content: <ProjectCards />,
       icon: <AnimatedPxlKitIcon icon={BlinkingEye} size={32} />,
-    }/* ,
-    {
-      id: "currentTargets",
-      label: "Current Targets",
-      content: <div/>,
-      icon: <PxlKitIcon icon={TargetHit} size={32} />,
     },
-    {
-      id: "skillset",
-      label: "Skillset",
-      content: <div />,
-      icon: <PxlKitIcon icon={MagicWand} size={32} />,
-    }, */
+
   ];
 
   return (

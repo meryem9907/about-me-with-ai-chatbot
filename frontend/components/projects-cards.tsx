@@ -2,13 +2,10 @@
 
 import { PxlKitIcon } from "@pxlkit/core";
 import { PixelButton, PixelCard, PixelTooltip } from "@pxlkit/ui-kit";
-import { Heart } from "@pxlkit/social";
 import { Staff } from "@pxlkit/gamification";
-import { SparkleSmall } from "@pxlkit/ui";
-import { Globe } from "@pxlkit/social";
 import { Lightning } from "@pxlkit/gamification";
 import { projects } from "./data/projects";
-import { useCallback } from "react";
+import { ReactNode, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 function Card({
@@ -17,7 +14,7 @@ function Card({
   desc,
 }: {
   children: string;
-  icon: any;
+  icon: ReactNode;
   desc: string;
 }) {
   return (

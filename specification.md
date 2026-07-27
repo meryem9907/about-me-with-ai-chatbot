@@ -52,3 +52,4 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - enhance accessibility
 - make it scalable for the future
 - add tests in frontend and backend
+- make design more custom

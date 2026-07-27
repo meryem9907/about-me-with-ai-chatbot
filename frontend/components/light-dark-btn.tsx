@@ -16,8 +16,8 @@ export default function LightDarkBtn() {
     
     
     focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-retro-bg 
-    focus-visible:ring-retro-green/40  pxl-shadow-active fixed bottom-6 
-    right-6 z-50 shadow-lg"
+    focus-visible:ring-retro-green/40  pxl-shadow-active fixed z-50 shadow-lg 
+    bottom-6 right-6" 
     >
       <PixelIconButton
         label="Light Dark Mode Switch"

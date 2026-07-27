@@ -1,5 +1,5 @@
 import { PixelChip} from "@pxlkit/ui-kit";
-import { starterPrompts } from "./data/starter_prompts";
+import { starterPrompts } from "./data/starter-prompts";
 
 export default function StarterPrompts({onMessage}:{onMessage: (text: string) => Promise<void>;}  ){
 

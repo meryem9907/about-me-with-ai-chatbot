@@ -5,7 +5,7 @@ from google.genai import types
 from rag import retrieve
 
 load_dotenv()
-model = "gemini-3.1-flash-lite"
+MODEL = os.environ["MODEL"] 
 SYSTEM_INSTRUCTION = """You are Meryem's portfolio assistant for recruiters.
 Answer ONLY using CONTEXT. If missing, say you don't know.
 Do not invent skills, jobs, dates, or projects.
@@ -19,7 +19,7 @@ class Agent:
 
     def generate_response(self, prompt):
         context = retrieve(prompt)
-        response = self.client.models.generate_content( model=model,
+        response = self.client.models.generate_content( model=MODEL,
             contents=f"CONTEXT:\n{context}\n\nQUESTION: {prompt}",
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
@@ -31,7 +31,7 @@ class Agent:
     async def stream_response(self, prompt):
         context = retrieve(prompt)
         stream = await self.client.aio.models.generate_content_stream(
-            model=model, 
+            model=MODEL, 
             contents=f"CONTEXT:\n{context}\n\nQUESTION: {prompt}",
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,

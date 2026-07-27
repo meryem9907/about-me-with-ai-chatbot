@@ -5,11 +5,8 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="bg-[var(--retro-bg)] min-h-dvh">
-      <Header />
+    <div className="bg-[var(--retro-bg)]">
        <TabBar />
-       <Footer />
-      <LightDarkBtn />
     </div>
   );
 }

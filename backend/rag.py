@@ -1,9 +1,8 @@
 import chromadb
 from chromadb.utils import embedding_functions
 
-# Free local embeddings — no API cost
 ef = embedding_functions.DefaultEmbeddingFunction()
-# Create a persistent client
+
 client = chromadb.PersistentClient(path="./chroma_data")
 col = client.get_or_create_collection("about_me", embedding_function=ef)
 

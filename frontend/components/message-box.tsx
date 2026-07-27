@@ -2,7 +2,7 @@ import { PixelBox,  PixelScrollArea} from "@pxlkit/ui-kit";
 import { MessageBubbleAssistant, MessageBubbleDefault, MessageBubbleUser } from "./message-bubble";
 import { Message } from "@/models/Message";
 import { useEffect, useRef } from "react";
-import StarterPrompts from "./starter_prompt-fields";
+import StarterPrompts from "./starter-prompt-fields";
 
 export default function MessageBox({ messages,  description, onMessage, mainWindowBottomRef}:{messages:Message[],  description:string,   onMessage: (text: string) => Promise<void>, mainWindowBottomRef: React.RefObject<HTMLDivElement | null>} ){
   const chatWindowBottomRef = useRef<HTMLDivElement>(null);

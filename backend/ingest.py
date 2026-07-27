@@ -4,6 +4,7 @@ from chromadb.utils import embedding_functions
 
 CHUNK_SIZE = 800
 OVERLAP = 100
+
 # Free local embeddings — no API cost
 ef = embedding_functions.DefaultEmbeddingFunction()
 

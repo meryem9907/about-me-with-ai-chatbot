@@ -5,6 +5,8 @@ services:
       - "8000:8000"
     environment:
       GEMINI_API_KEY: ${GEMINI_API_KEY}
+      MODEL: ${MODEL}
+      PROD_DOMAIN: ${PROD_DOMAIN}
     volumes:
       - ./backend/chroma_data:/app/chroma_data  
 

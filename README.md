@@ -10,6 +10,7 @@ https://about-me-with-ai-chatbot.onrender.com/
 - Docker ~29.6
 
 # Run with docker
+- Create an .env file. Required variables are defined in `env.example`
 - <code>docker compose up --build</code>
 
 # Credits 

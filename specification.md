@@ -26,6 +26,7 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - vector db: Qdrant / Chroma / pgvector
 - deploy:  Render / Railway / Fly.io / VPS
 - add MCP Server later for Github, CV query etc.
+
 # MVP
 - Recruiter -> Uses chatbot -> Chatbot gives answers
 
@@ -45,7 +46,6 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - Figma 
 
 # Next steps
-- dockerize
 - error handling, to many requests
 - multilingual
 - improve mobile version

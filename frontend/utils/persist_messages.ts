@@ -2,10 +2,9 @@ import { Message } from "@/models/Message";
 import { Dispatch, SetStateAction } from "react";
 
 const STORAGE_KEY = "chat_state_v1";
-const MAX_MESSAGES = 30;
+const MAX_MESSAGES = process.env.MAX_MESSAGES ?? 30;
 
-
-export function loadMesssages(
+export function loadMessages(
   setMessages: Dispatch<SetStateAction<Message[]>>,
 
   setPrompt: Dispatch<SetStateAction<string>>,

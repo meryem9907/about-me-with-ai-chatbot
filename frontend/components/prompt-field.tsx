@@ -1,10 +1,10 @@
 import { PxlKitIcon } from "@pxlkit/core";
 import { PixelBox, PixelIconButton, PixelTextarea, PixelTooltip } from "@pxlkit/ui-kit";
-import { ArrowRight } from "@/app/icons/arrow-right";
+import { ArrowRight } from "@/models/icons/arrow-right";
 import { Dispatch, SetStateAction } from "react";
 import { removeMessages } from "@/utils/persist_messages";
 import { Message } from "@/models/Message";
-import { Redo } from "@/app/icons/redo";
+import { Redo } from "@/models/icons/redo";
 
 export default function PromptField({
   placeholder,

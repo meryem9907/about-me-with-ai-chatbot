@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import PromptField from "./prompt-field";
 import MessageBox from "./message-box";
 import { Message } from "@/models/Message";
-import { loadMesssages,  saveMessages } from "@/utils/persist_messages";
+import { loadMessages,  saveMessages } from "@/utils/persist_messages";
 
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
-const MAX_MESSAGES = process.env.MAX_MESSAGES ?? 300;
+const MAX_MESSAGES = process.env.MAX_MESSAGES ?? 30;
 
 export default function ChatContainer({
   chatTitle,
@@ -28,7 +28,7 @@ export default function ChatContainer({
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    loadMesssages(setMessages, setPrompt);
+    loadMessages(setMessages, setPrompt);
   }, []);
 
   useEffect(() => {

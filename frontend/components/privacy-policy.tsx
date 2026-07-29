@@ -1,3 +1,5 @@
+"use client"
+
 export default function PrivacyPolicy() {
     return (
       <main className="mx-auto max-w-2xl px-5 py-10 pb-16 font-sans leading-relaxed break-words">

@@ -17,5 +17,7 @@ services:
         NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
     ports:
       - "3000:3000"
+    environment:
+      MAX_MESSAGES: ${MAX_MESSAGES}
     depends_on:
       - backend

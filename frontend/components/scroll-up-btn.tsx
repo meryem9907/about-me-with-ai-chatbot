@@ -15,8 +15,6 @@ export default function ScrollUpBtn() {
     <div>
         <PixelIconButton label="Go Up" tone="green" icon={<PxlKitIcon icon={Send} size={16} className="rotate-270"/>} 
         className="m-2 cursor-pointer fixed bottom-4 right-16 z-50 " onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-  
-  
         </PixelIconButton>
     </div>
   ) : null;

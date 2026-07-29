@@ -1,6 +1,12 @@
+"use client"
+import { PixelButton } from "@pxlkit/ui-kit";
+import { useRouter } from "next/navigation";
+
 export default function Imprint() {
+  const router = useRouter()
     return (
   <div className="text-center break-words font-sans">
+ 
     <h1 className="text-xl  py-4">Imprint</h1>
     <div className=" px-4 ">
     <p className="pb-2">
@@ -22,7 +28,7 @@ export default function Imprint() {
 
     <h2 >Responsible for editorial content: </h2>
     <p>Meryem Ünüvar</p> 
-    </div>
+    </div>  
   </div>
   );
 }

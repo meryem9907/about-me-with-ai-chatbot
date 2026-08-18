@@ -1,46 +1,49 @@
+"""
+Ingest the knowledge base into the vector database. Load data from KNOWLEDGE_DIR, chunk it into smaller chunks, 
+embed them, and store them in the vector database/collection."""
 from pathlib import Path
-import chromadb
-from chromadb.utils import embedding_functions
 
-CHUNK_SIZE = 800
-OVERLAP = 100
+from rag import KNOWLEDGE_DIR, reset_collection
 
-# Free local embeddings — no API cost
-ef = embedding_functions.DefaultEmbeddingFunction()
+# Stay under MiniLM's ~256-token window (~4 chars/token → ~1000 max; use headroom).
+CHUNK_SIZE = 450 
+OVERLAP = 50
 
-# Create a persistent client
-client = chromadb.PersistentClient(path="./chroma_data")
-# Get or create a collection
-col = client.get_or_create_collection("about_me", embedding_function=ef)
 
-# Chunk text into smaller chunks
-def chunk_text(text: str, size=CHUNK_SIZE, overlap=OVERLAP):
+def chunk_text(text: str, size: int = CHUNK_SIZE, overlap: int = OVERLAP):
+    """Chunk text into smaller chunks."""
     chunks, i = [], 0
+    step = max(1, size - overlap)
     while i < len(text):
         chunks.append(text[i : i + size])
-        i += size - overlap
+        i += step
     return chunks
 
-# Ingest the text into the collection
-ids, documents, metadatas = [], [], []
-# Iterate over the files in the knowledge folder
-for path in Path("knowledge").rglob("*"):
-    if path.suffix.lower() not in {".md", ".txt"}:
-        continue
-    text = path.read_text(encoding="utf-8")
-    # Chunk the text into smaller chunks
-    for i, chunk in enumerate(chunk_text(text)):
-        # Add the id, document and metadata to the lists
-        ids.append(f"{path.stem}-{i}")
-        documents.append(chunk)
-        # Add the source to the metadata
-        metadatas.append({"source": path.name})
-        
-# Upsert the chunks into the collection
-if ids:
-    col.upsert(ids=ids, documents=documents, metadatas=metadatas)
-else:
-    print("No documents found in knowledge/")
-    
-    
-print(f"Ingested {len(ids)} chunks")
+
+def ingest() -> int:
+    """Ingest the knowledge base into the vector database."""
+    col = reset_collection()
+    ids, documents, metadatas = [], [], []
+
+    for path in sorted(KNOWLEDGE_DIR.rglob("*")):
+        if path.suffix.lower() not in {".md", ".txt"}:
+            continue
+        text = path.read_text(encoding="utf-8")
+        rel = path.relative_to(KNOWLEDGE_DIR).as_posix()
+        for i, chunk in enumerate(chunk_text(text)):
+            ids.append(f"{rel}-{i}")
+            documents.append(chunk)
+            metadatas.append({"source": rel})
+
+    if ids:
+        # embedding: updates existing items, or adds them if they don’t yet exist
+        col.upsert(ids=ids, documents=documents, metadatas=metadatas)
+    else:
+        print(f"No documents found in {KNOWLEDGE_DIR}/")
+
+    print(f"Ingested {len(ids)} chunks")
+    return len(ids)
+
+
+if __name__ == "__main__":
+    ingest()

@@ -44,4 +44,10 @@ yarn-error.log*
 next-env.d.ts
 
 # chroma db
-chroma*
+backend/chroma_data/
+
+# python
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.venv/
+*.pyc

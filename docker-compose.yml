@@ -7,17 +7,27 @@ services:
       GEMINI_API_KEY: ${GEMINI_API_KEY}
       MODEL: ${MODEL}
       PROD_DOMAIN: ${PROD_DOMAIN}
+      RATE_LIMIT_REQUESTS: ${RATE_LIMIT_REQUESTS:-20}
+      RATE_LIMIT_WINDOW_SEC: ${RATE_LIMIT_WINDOW_SEC:-60}
+      ALLOW_GET_STREAM: ${ALLOW_GET_STREAM:-false}
     volumes:
-      - ./backend/chroma_data:/app/chroma_data  
+      - ./backend/chroma_data:/app/chroma_data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
   frontend:
     build:
-      context: ./frontend
-      args: 
+      context: ./frontend_1.0
+      args:
         NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+        NEXT_PUBLIC_MAX_MESSAGES: ${NEXT_PUBLIC_MAX_MESSAGES:-30}
     ports:
       - "3000:3000"
-    environment:
-      MAX_MESSAGES: ${MAX_MESSAGES}
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy

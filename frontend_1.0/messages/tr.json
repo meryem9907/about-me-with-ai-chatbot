@@ -1,0 +1,102 @@
+{
+  "Meta": {
+    "title": "Meryem Ünüvar — Yazılım Geliştirici",
+    "description": "İşverenler için yapay zekâ sohbet asistanlı portföy: beceriler, projeler ve deneyim."
+  },
+  "Nav": {
+    "home": "Ana sayfa",
+    "chat": "Sohbet",
+    "chatAssistant": "Sohbet Asistanı",
+    "projects": "Projeler",
+    "imprint": "Künye",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "openMore": "Daha fazla bağlantı aç",
+    "site": "Site",
+    "primary": "Ana navigasyon",
+    "skip": "Ana içeriğe geç",
+    "language": "Dil"
+  },
+  "Common": {
+    "loading": "Yükleniyor"
+  },
+  "Theme": {
+    "label": "Tema",
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem",
+    "aria": "Tema: {mode}. Değiştirmek için tıklayın.",
+    "title": "Tema: {mode}"
+  },
+  "Home": {
+    "chatCta": "Sohbet Asistanı",
+    "projectsCta": "Projeler",
+    "nextLine": "Sonraki satırı göster",
+    "goToEnd": "Tanıtımı atla",
+    "lineProgress": "Satır {current} / {total}",
+    "brandTitle": "Meryem",
+    "welcome": [
+      "Merhaba!",
+      "Ben Meryem.",
+      "Yazılım geliştiricisiyim.",
+      "Pratik, sade ve sonuç odaklıyım.",
+      "Gerçek sorunlara çözüm ararım.",
+      "Hatalar rehberimdir.",
+      "Çalışmalarımda gizlilik ve güvenlik önemlidir.",
+      "Çalışmalarımda yaratıcılık ve yenilik önemlidir.",
+      "Gerçek etki ararım.",
+      "Daha fazlası için asistanımla sohbet edin veya projelerime bakın."
+    ]
+  },
+  "Chat": {
+    "title": "Bana sor",
+    "messageLabel": "Mesaj",
+    "placeholder": "Bir soru yazın...",
+    "send": "Mesaj gönder",
+    "privacyHint": "Lütfen kişisel bilgi paylaşmayın.",
+    "saveToggle": "Sohbeti bu cihazda kaydet",
+    "clear": "Sohbeti temizle",
+    "retry": "Yeniden dene",
+    "cooldown": "{seconds} sn sonra tekrar deneyin.",
+    "savedToast": "Sohbet bu cihazda kaydedilecek.",
+    "unsavedToast": "Kayıtlı sohbet silindi. Yeni mesajlar ayrılana kadar kalır.",
+    "clearedToast": "Sohbet temizlendi.",
+    "replying": "Asistan yanıtlıyor",
+    "finished": "Asistan yanıtı tamamladı",
+    "apiMissing": "Sohbet API’si yapılandırılmamış.",
+    "rateLimit": "Çok fazla istek. Lütfen biraz bekleyip tekrar deneyin.",
+    "streamFailed": "Yanıt alınamadı. Lütfen tekrar deneyin.",
+    "network": "Ağ hatası. Bağlantınızı kontrol edip tekrar deneyin.",
+    "unknown": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+    "stop": "Durdur",
+    "stopped": "Yanıt durduruldu."
+  },
+  "Projects": {
+    "viewRepo": "Repoyu gör",
+    "repoUnavailable": "Depo henüz herkese açık değil",
+    "opensInNewTab": "(yeni sekmede açılır)"
+  },
+  "Errors": {
+    "notFoundTitle": "Sayfa bulunamadı",
+    "notFoundBody": "İstediğiniz sayfa yok veya taşınmış.",
+    "backHome": "Ana sayfaya dön",
+    "errorTitle": "Bir şeyler ters gitti",
+    "errorFallback": "Beklenmeyen bir hata oluştu.",
+    "tryAgain": "Tekrar dene"
+  },
+  "Legal": {
+    "englishOnly": "Bu yasal metin şu anda yalnızca İngilizce olarak mevcuttur."
+  },
+  "Imprint": {
+    "title": "Künye",
+    "address": "Adres:",
+    "contact": "İletişim",
+    "mobile": "Mobil:",
+    "email": "E-posta:",
+    "responsible": "İçerikten sorumlu:"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "Meta": {
+    "title": "Meryem Ünüvar — Softwareentwicklerin",
+    "description": "Portfolio mit KI-Chat für Recruiter: Skills, Projekte und Erfahrung."
+  },
+  "Nav": {
+    "home": "Start",
+    "chat": "Chat",
+    "chatAssistant": "Chat-Assistent",
+    "projects": "Projekte",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "openMore": "Weitere Links öffnen",
+    "site": "Seite",
+    "primary": "Hauptnavigation",
+    "skip": "Zum Inhalt springen",
+    "language": "Sprache"
+  },
+  "Common": {
+    "loading": "Wird geladen"
+  },
+  "Theme": {
+    "label": "Theme",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System",
+    "aria": "Theme: {mode}. Zum Wechseln klicken.",
+    "title": "Theme: {mode}"
+  },
+  "Home": {
+    "chatCta": "Chat-Assistent",
+    "projectsCta": "Projekte",
+    "nextLine": "Nächste Zeile anzeigen",
+    "goToEnd": "Intro überspringen",
+    "lineProgress": "Zeile {current} von {total}",
+    "brandTitle": "Meryem",
+    "welcome": [
+      "Hallo!",
+      "Ich bin Meryem.",
+      "Ich bin Softwareentwicklerin.",
+      "Ich bin praktisch, schlicht und ergebnisorientiert.",
+      "Ich suche Lösungen für echte Probleme.",
+      "Fehler sind mein Wegweiser.",
+      "Meine Arbeit schätzt Privatsphäre und Sicherheit.",
+      "Meine Arbeit schätzt Kreativität und Innovation.",
+      "Ich suche echte Wirkung.",
+      "Mehr dazu im Chat mit meinem Assistenten oder bei meinen Projekten."
+    ]
+  },
+  "Chat": {
+    "title": "Frag mich",
+    "messageLabel": "Nachricht",
+    "placeholder": "Stelle eine Frage...",
+    "send": "Nachricht senden",
+    "privacyHint": "Bitte teile keine persönlichen Informationen.",
+    "saveToggle": "Chat auf diesem Gerät speichern",
+    "clear": "Chat löschen",
+    "retry": "Erneut versuchen",
+    "cooldown": "In {seconds}s erneut versuchen.",
+    "savedToast": "Chat wird auf diesem Gerät gespeichert.",
+    "unsavedToast": "Gespeicherter Chat gelöscht. Neue Nachrichten bleiben bis zum Verlassen.",
+    "clearedToast": "Chat gelöscht.",
+    "replying": "Assistent antwortet",
+    "finished": "Assistent hat geantwortet",
+    "apiMissing": "Chat-API ist nicht konfiguriert.",
+    "rateLimit": "Zu viele Anfragen. Bitte kurz warten und erneut versuchen.",
+    "streamFailed": "Antwort fehlgeschlagen. Bitte erneut versuchen.",
+    "network": "Netzwerkfehler. Verbindung prüfen und erneut versuchen.",
+    "unknown": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+    "stop": "Stopp",
+    "stopped": "Antwort gestoppt."
+  },
+  "Projects": {
+    "viewRepo": "Repo ansehen",
+    "repoUnavailable": "Repository noch nicht öffentlich",
+    "opensInNewTab": "(öffnet in neuem Tab)"
+  },
+  "Errors": {
+    "notFoundTitle": "Seite nicht gefunden",
+    "notFoundBody": "Die angeforderte Seite existiert nicht oder wurde verschoben.",
+    "backHome": "Zur Startseite",
+    "errorTitle": "Etwas ist schiefgelaufen",
+    "errorFallback": "Ein unerwarteter Fehler ist aufgetreten.",
+    "tryAgain": "Erneut versuchen"
+  },
+  "Legal": {
+    "englishOnly": "Dieses Rechtsdokument ist derzeit nur auf Englisch verfügbar."
+  },
+  "Imprint": {
+    "title": "Impressum",
+    "address": "Adresse:",
+    "contact": "Kontakt",
+    "mobile": "Mobil:",
+    "email": "E-Mail:",
+    "responsible": "Verantwortlich für den Inhalt:"
+  }
+}

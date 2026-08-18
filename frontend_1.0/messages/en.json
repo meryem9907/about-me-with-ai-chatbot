@@ -1,0 +1,102 @@
+{
+  "Meta": {
+    "title": "Meryem Ünüvar — Software Developer",
+    "description": "Portfolio with an AI chat assistant for recruiters: skills, projects, and experience."
+  },
+  "Nav": {
+    "home": "Home",
+    "chat": "Chat",
+    "chatAssistant": "Chat Assistant",
+    "projects": "Projects",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "openMore": "Open more links",
+    "site": "Site",
+    "primary": "Primary",
+    "skip": "Skip to main content",
+    "language": "Language"
+  },
+  "Common": {
+    "loading": "Loading"
+  },
+  "Theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "aria": "Theme: {mode}. Click to change.",
+    "title": "Theme: {mode}"
+  },
+  "Home": {
+    "chatCta": "Chat Assistant",
+    "projectsCta": "Project view",
+    "nextLine": "Show next line",
+    "goToEnd": "Skip intro",
+    "lineProgress": "Line {current} of {total}",
+    "brandTitle": "Meryem",
+    "welcome": [
+      "Hello!",
+      "I am Meryem.",
+      "I am a software developer.",
+      "I am practical, simplistic and result-oriented.",
+      "I seek solutions for real problems.",
+      "Mistakes are my guide.",
+      "My work values privacy and security.",
+      "My work values creativity and innovation.",
+      "I seek real impact.",
+      "For more chat with my assistant or see my projects."
+    ]
+  },
+  "Chat": {
+    "title": "Ask me",
+    "messageLabel": "Message",
+    "placeholder": "Type a question...",
+    "send": "Send message",
+    "privacyHint": "Please avoid sharing personal information.",
+    "saveToggle": "Save chat on this device",
+    "clear": "Clear chat",
+    "retry": "Retry",
+    "cooldown": "Try again in {seconds}s.",
+    "savedToast": "Chat will be saved on this device.",
+    "unsavedToast": "Saved chat cleared. New messages stay until you leave.",
+    "clearedToast": "Chat cleared.",
+    "replying": "Assistant is replying",
+    "finished": "Assistant finished replying",
+    "apiMissing": "Chat API is not configured.",
+    "rateLimit": "Too many requests. Please wait a moment and try again.",
+    "streamFailed": "Could not get a reply. Please try again.",
+    "network": "Network error. Check your connection and try again.",
+    "unknown": "Something went wrong. Please try again.",
+    "stop": "Stop",
+    "stopped": "Reply stopped."
+  },
+  "Projects": {
+    "viewRepo": "View repo",
+    "repoUnavailable": "Repository not public yet",
+    "opensInNewTab": "(opens in new tab)"
+  },
+  "Errors": {
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "The page you requested does not exist or was moved.",
+    "backHome": "Back to home",
+    "errorTitle": "Something went wrong",
+    "errorFallback": "An unexpected error occurred.",
+    "tryAgain": "Try again"
+  },
+  "Legal": {
+    "englishOnly": "This legal document is currently available in English only."
+  },
+  "Imprint": {
+    "title": "Imprint",
+    "address": "Address:",
+    "contact": "Contact",
+    "mobile": "Mobile:",
+    "email": "E-Mail:",
+    "responsible": "Responsible for editorial content:"
+  }
+}

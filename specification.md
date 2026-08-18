@@ -53,3 +53,5 @@ It targets recruiters so the design should be intuitive and modern. The main sou
 - make it scalable for the future
 - add tests in frontend and backend
 - make design more custom
+- inspect memory usage node --expose-gc --inspect index.js
+- node --max-old-space-size=6000 index.js

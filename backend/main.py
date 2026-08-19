@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import logging
 from contextlib import asynccontextmanager
 
@@ -9,24 +10,37 @@ from fastapi.responses import JSONResponse
 
 from agent import Agent
 from config import CORS_ORIGINS
-from rag import warm_embeddings
+from rag import collection_exists, collection_count, warm_embeddings
 from routes.health import router as health_router
 from routes.stream import router as stream_router
 
 logger = logging.getLogger(__name__)
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    """Warm embeddings on startup; close the Gemini client on shutdown."""
+def _prepare_vector_store() -> None:
+    """Ingest if empty, then load MiniLM. Must not block the listen socket."""
     try:
+        if not collection_exists():
+            from ingest import ingest
+
+            logger.info("Chroma collection empty; running ingest...")
+            ingest()
+        else:
+            logger.info("Chroma collection ready (%s chunks)", collection_count())
         warm_embeddings()
     except Exception:
-        logger.exception("Embedding warmup failed (continuing)")
+        logger.exception("Vector store prepare failed (continuing)")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Start serving immediately; warm RAG in the background for Fly cold starts."""
     app.state.agent = Agent()
+    warmup = asyncio.create_task(asyncio.to_thread(_prepare_vector_store))
     try:
         yield
     finally:
+        warmup.cancel()
         app.state.agent.close()
 
 
